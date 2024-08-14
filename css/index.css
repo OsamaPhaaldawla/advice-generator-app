@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  background-color: hsl(218, 23%, 16%);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 600px) {
+  body {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+main {
+  background-color: hsl(217, 19%, 24%);
+  color: hsl(193, 38%, 86%);
+  width: 600px;
+  text-align: center;
+  padding: 50px 30px;
+  border-radius: 15px;
+  position: relative;
+}
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+    margin-top: 100px;
+  }
+}
+main .content h5 {
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+main .content p {
+  font-size: 28px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  font-weight: 800;
+}
+@media (max-width: 600px) {
+  main .content p {
+    font-size: 20px;
+  }
+}
+main .content img {
+  margin-bottom: 30px;
+}
+main .content .mobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  main .content .mobile {
+    display: inline-block;
+    max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  main .content .desktop {
+    display: none;
+  }
+}
+main figure {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: -30px;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+main figure:hover {
+  -webkit-box-shadow: 1px 1px 18px 7px hsla(150, 100%, 66%, 0.57);
+          box-shadow: 1px 1px 18px 7px hsla(150, 100%, 66%, 0.57);
+}
